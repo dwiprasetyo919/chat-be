@@ -1,4 +1,4 @@
-# Farmio
+# Chat App
 
 Backend for Chat App
 
