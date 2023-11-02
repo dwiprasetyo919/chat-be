@@ -19,7 +19,7 @@ Backend for Chat App
     ```
 4. run `npm install` to install all package.
 5. run `npm run start:dev` to run app in development mode.
-6. open browsers and open `localhost:5002/api/v1/ping`, it should return **Ping Pong !**
+6. open browsers and open `localhost:5002/api/v1/ping`, it should return **Ping Pong!**
 
 ## Documentation
 For Web, open browser and go to `http://localhost:5002/api/docs#/`

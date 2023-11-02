@@ -8,7 +8,6 @@ describe('ChatsService', () => {
     const module: TestingModule = await Test.createTestingModule({
       providers: [ChatsService],
     }).compile();
-
     service = module.get<ChatsService>(ChatsService);
   });
 
@@ -16,3 +15,4 @@ describe('ChatsService', () => {
     expect(service).toBeDefined();
   });
 });
+

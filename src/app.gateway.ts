@@ -46,6 +46,7 @@ export class AppGateway
   }
 
   async handleConnection(client: Socket, ...args: any[]) {
+    console.log('test');
     this.logger.log(`Client connected: ${client.id}`);
   }
 }

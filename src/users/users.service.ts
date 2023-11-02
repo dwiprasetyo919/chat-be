@@ -5,7 +5,6 @@ import { UsersRepository } from './users.repository';
 export class UsersService {
   constructor(private readonly usersRepository: UsersRepository) {}
 
-  
   async findOneByEmail(email): Promise<any> {
     return this.usersRepository.findOneByEmail(email);
   }

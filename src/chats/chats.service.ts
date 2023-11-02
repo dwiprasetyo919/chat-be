@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { CreateChatDto } from './dto/create-chat.dto';
 import { ChatsRepository } from './chats.repository';
-
+import { ObjectId } from 'mongoose';
 @Injectable()
 export class ChatsService {
   constructor(private readonly chatsRepository: ChatsRepository) {}
@@ -11,7 +11,15 @@ export class ChatsService {
   }
 
   async findAllChats(id: string) {
-    console.log("test", id);
     return await this.chatsRepository.findAllChats(id);
   }
+
+  async deleteMember(id: string, userId: string) {
+    return await this.chatsRepository.deleteMember(id, userId);
+  }
+
+  async deleteChat(id: string) {
+    return await this.chatsRepository.deleteChat(id);
+  }
+  
 }

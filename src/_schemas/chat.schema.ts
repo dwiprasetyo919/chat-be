@@ -6,6 +6,8 @@ export type ChatDocument = Chat & Document;
 
 @Schema({ versionKey: false, timestamps: true })
 export class Chat {
+  @Prop()
+  name: string;
   @Prop({ ref: 'User', type: [SchemaTypes.ObjectId] })
   members: [ObjectId];
 }

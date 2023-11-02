@@ -8,7 +8,6 @@ import { JwtAuthGuard } from 'src/auth/jwt-auth.guard';
 @Controller('api/v1/')
 export class MessagesController {
   constructor(private readonly messagesService: MessagesService) {}
-
   @UseGuards(JwtAuthGuard)
   @Post('messages')
   @ApiResponse({
