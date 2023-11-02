@@ -20,7 +20,7 @@ export class MessagesController {
   }
 
   @UseGuards(JwtAuthGuard)
-  @Get('messages/id')
+  @Get('messages/:id')
   async getAllMessagesByChatId(@Param('id') id: string) {
     return await this.messagesService.findAllMessages(id);
   }
